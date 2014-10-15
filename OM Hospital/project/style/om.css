@@ -8,14 +8,17 @@ body {
 .nvbar .setting .img{ width:28px;height:28px;}
 /*data-icon*/
 
-.km-drawer:after,
-.km-drawer:before
-{
-    content: "\e0f1";
-}
-
 .km-setting:after,
 .km-setting:before
 {
     content: "\e0da";
 }
+
+/*drawer*/
+.drawerDiv{ width:235px;}
+.drawerDiv ul{padding:0px 0px 0px 0px}
+.km-flat .km-group-title {background:#E2E2E2;border-color: rgba(0,0,0,0.1);}
+
+/*dashboard*/
+#home .mainDv{width:100%;height:auto;margin:0px auto;}
+#home .mainDv .logoDv{width:90%;height:130px;margin:0px auto;border:1px solid red;margin-top:15px;}

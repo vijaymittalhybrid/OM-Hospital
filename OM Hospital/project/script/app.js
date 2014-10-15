@@ -4,7 +4,9 @@
     apps = new kendo.mobile.Application(document.body,
                                                         {
                                                             layout:'om_hospital',
-                                                            skin:'flat'
+                                                            skin:'flat',
+                                                            initial:'home',
+                                                            transition:''
                                                         }
     );
 })(window);

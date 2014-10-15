@@ -10,13 +10,39 @@
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="project/script/app.js"></script>
+    <script src="project/script/dashbord.js"></script>
 </head>
     
 <body>
     
+    <!--Drawer-->
+    <div data-role="drawer" id="my-drawer" class="drawerDiv" data-model="app.dashbordService.viewModel" data-init="app.dashbordService.viewModel.show">
+        <ul id="drawer_list">
+        </ul>
+    </div>
+    
+    
     <!--Main Dashbord-->
     <div data-role="view" id="home" data-title="OM Hospital" data-layout="om_hospital">
-        
+        <div class="mainDv">
+            <!--Logo Div-->
+            <div class="logoDv">
+                <!--For image-->
+                <div class="logo">
+                    
+                </div>
+                <!--For text-->
+                <div class="logoText">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Second-->
+    <div data-role="view" id="second" data-title="OM Hospital" data-layout="om_hospital">
+        hgkgjhgjhgjh
     </div>
     
     <!--layout Design-->
@@ -25,7 +51,7 @@
             <div data-role="navbar" class="nvbar">
                 <a data-align="left" data-rel="drawer" href="#my-drawer" data-role="button"  class="setting"><img src="project/style/image/drawer.png" class="img"/></a>
                 <span data-role="view-title"></span>
-               <a data-align="right" data-role="button"  class="setting"><img src="project/style/image/setting.png" class="img"/></a>
+               <a data-align="right" data-role="button" href="#second"  class="setting"><img src="project/style/image/setting.png" class="img"/></a>
             </div>
         </div>
     </div>
