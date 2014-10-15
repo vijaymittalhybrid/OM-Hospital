@@ -4,13 +4,30 @@
     <title></title>
     <meta charset="utf-8" />
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="project/style/om.css" rel="stylesheet"/>
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
-    
+    <script src="project/script/app.js"></script>
 </head>
+    
 <body>
     
+    <!--Main Dashbord-->
+    <div data-role="view" id="home" data-title="OM Hospital" data-layout="om_hospital">
+        
+    </div>
+    
+    <!--layout Design-->
+    <div data-role="layout" data-id="om_hospital">
+        <div data-role="header">
+            <div data-role="navbar" class="nvbar">
+                <a data-align="left" data-rel="drawer" href="#my-drawer" data-role="button"  class="setting"><img src="project/style/image/drawer.png" class="img"/></a>
+                <span data-role="view-title"></span>
+               <a data-align="right" data-role="button"  class="setting"><img src="project/style/image/setting.png" class="img"/></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

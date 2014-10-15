@@ -1,0 +1,21 @@
+body {
+}
+
+/*layout*/
+.nvbar{ background-color:#2D2D2D !important}
+.nvbar span{ color:#FFFFFF;font-weight:bold;font-size:17px;}
+.nvbar .setting{ background-color:#2D2D2D !important;border:0px;margin-left:-14px;margin-right:-12px;margin-top:5px !important;}
+.nvbar .setting .img{ width:28px;height:28px;}
+/*data-icon*/
+
+.km-drawer:after,
+.km-drawer:before
+{
+    content: "\e0f1";
+}
+
+.km-setting:after,
+.km-setting:before
+{
+    content: "\e0da";
+}
