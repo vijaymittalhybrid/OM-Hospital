@@ -1,10 +1,10 @@
 (function(global){
-    var dashbordModel,drawerSource,logoSource,
+    var drawerModel,drawerSource,logoSource,
         app = global.app = global.app || {};
     
-    dashbordModel = kendo.data.ObservableObject.extend({
+    drawerModel = kendo.data.ObservableObject.extend({
         show:function(){
-            
+            console.log("jlkjkl");
             /*Drawer*/
              drawerSource = new kendo.data.DataSource({
                 transport:{
@@ -19,10 +19,10 @@
                 drawer_items:drawerSource,
                 
                 navigation:function(e){
-                    app.dashbordService.viewModel.navigateToView(e);
+                    app.drawerService.viewModel.navigateToView(e);
                 }
             });
-            kendo.bind($("ul"), viewModel);
+            kendo.bind($("#my-drawer ul"), viewModel);
             
             /*logo*/
             /*logoSource = new kendo.data.DataSource({
@@ -77,7 +77,7 @@
         }
     });
     
-    app.dashbordService = {
-        viewModel:new dashbordModel()
+    app.drawerService = {
+        viewModel:new drawerModel()
     };
 })(window);

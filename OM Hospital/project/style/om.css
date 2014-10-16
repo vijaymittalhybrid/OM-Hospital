@@ -28,7 +28,18 @@ body {
 
 
 /*dashboard*/
-#home .mainDv{width:100%;height:auto;margin:0px auto;}
-#home .mainDv .logoDv{width:90%;height:130px;margin:0px auto;border:1px solid red;margin-top:15px;}
+#home .mainDv{width:90%;height:auto;margin:0px auto;}
+/*#home .mainDv .logoDv{width:90%;height:130px;margin:0px auto;border:1px solid red;margin-top:15px;}
 .logoDv .logo{ width:35%;height:100%;border:1px solid blue;float:left}
-.logoDv .logoText{ width:65%;height:100%;border:1px solid green;float:left}
+.logoDv .logoText{ width:65%;height:100%;border:1px solid green;float:left}*/
+
+/*home*/
+#home .mainDv{width:98%;height:auto;margin:0px auto;margin-top:5px;background-color:#FFFFFF;border:1px solid #ccc;}
+#logo_list .logoDv{width:90%;height:130px;margin:0px auto;margin-top:15px;}
+.logoDv .logo{ width:32%;height:100%;float:left}
+.logoDv .logo img{width: 65px;height: 65px;margin: 26px 0px 0px 12px;}
+.logoDv .logoText{ width:68%;height:100%;float:left}
+.logoDv .logoText span{ line-height: 95px;margin-left: 5px;font-size: 20px;font-weight: bold;}
+
+
+

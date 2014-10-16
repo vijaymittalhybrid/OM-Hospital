@@ -1,9 +1,9 @@
 [ 
-    {"link":"clinicInfo","name": "Clinic Information","url":"project/style/image/home.png" }, 
-    {"link":"clinicNews","name": "Clinic News","url":"project/style/image/clnews.png" }, 
-    {"link":"setAppoint","name": "Set Appointment","url":"project/style/image/appont.png" }, 
-    {"link":"socialNet","name": "Social Network","url":"project/style/image/social.png" }, 
-    {"link":"healthTip","name": "Health Tips","url":"project/style/image/hlth.png" }, 
-    {"link":"website","name": "Visit Our Website","url":"project/style/image/site.png" },
-    {"link":"jj","name": "","url":"project/style/image/blk.png" }
+    {"sourceUrl":"clinicInfo","name": "Clinic Information","imgUrl":"project/style/image/home.png" }, 
+    {"sourceUrl":"clinicNews","name": "Clinic News","imgUrl":"project/style/image/clnews.png" }, 
+    {"sourceUrl":"setAppoint","name": "Set Appointment","imgUrl":"project/style/image/appont.png" }, 
+    {"sourceUrl":"socialNet","name": "Social Network","imgUrl":"project/style/image/social.png" }, 
+    {"sourceUrl":"healthTip","name": "Health Tips","imgUrl":"project/style/image/hlth.png" }, 
+    {"sourceUrl":"website","name": "Visit Our Website","imgUrl":"project/style/image/site.png" },
+    {"sourceUrl":"jj","name": "","imgUrl":"project/style/image/blk.png" }
 ]

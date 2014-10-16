@@ -10,13 +10,14 @@
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="project/script/app.js"></script>
-    <script src="project/script/dashbord.js"></script>
+    <script src="project/script/drawer.js"></script>
+    <script src="project/script/home.js"></script>
 </head>
     
 <body>
     
     <!--Drawer-->
-    <div data-role="drawer" id="my-drawer" class="drawerDiv" data-views="['home']" data-model="app.dashbordService.viewModel" data-show="app.dashbordService.viewModel.show">
+    <div data-role="drawer" id="my-drawer" class="drawerDiv" data-views="['home','clinicInfo','clinicNews','setAppoint','socialNet','healthTip','website']" data-model="app.drawerService.viewModel" data-show="app.drawerService.viewModel.show">
         <ul data-role="listview" id="drawer_list" data-bind="source:drawer_items" data-template="drawer-template">
         </ul>
     </div>
@@ -24,7 +25,7 @@
     <script type="text/x-kendo-template" id="drawer-template">
         <li data-bind="click:navigation">
             <div class="drawrItmDv">
-                <div class="drawrLogo"><img src="#:url#"/></div>
+                <div class="drawrLogo"><img src="#:imgUrl#"/></div>
                 <div class="drawrTxt"><span>#:name#</span></div>
             </div>
         </li>
@@ -32,34 +33,59 @@
     
     
     <!--Main Dashbord-->
-    <div data-role="view" id="home" data-title="OM Hospital" data-layout="om_hospital">
-        <div class="mainDv" id="logo" data-bind="source:logo_item" data-template="logo-template">
-           
+    <div data-role="view" id="home" data-title="OM Hospital" data-layout="om_hospital" data-model="app.homeService.viewModel" data-show="app.homeService.viewModel.show">
+        <div class="mainDv" id="logo">
+            <ul data-role="listview" id="logo_list" data-bind="source:logo_item" data-template="logo-template">
+            </ul>
+        </div>
+        
+        <div data-role="content">
+            
         </div>
     </div>
     
     <script type="text/x-kendo-template" id="logo-template">
-        
-        <!--Logo Div-->
-        <div class="logoDv" >
-            <!--For image-->
-            <div class="logo">
-                <img src="#:url#" style="width:50px;height:50px;"/>
-            </div>
-
-            <!--For text-->
-            <div class="logoText">
-                <span>#:name#</span>
-            </div>
-        </div>
        
+            <div class="logoDv">
+                <div class="logo"><img src="#:url#"/></div>
+                <div class="logoText"><span>#:name#</span></div>
+            </div>
+        
     </script>
     
     
-    <!--Second-->
+    <!--clinicInfo-->
     <div data-role="view" id="clinicInfo" data-title="OM Hospital" data-layout="om_hospital">
-        hgkgjhgjhgjh
+       Clinic information page
     </div>
+    
+    <!--clinicNews-->
+    <div data-role="view" id="clinicNews" data-title="OM Hospital" data-layout="om_hospital">
+        Clinic news page
+    </div>
+    
+    <!--setAppoint-->
+    <div data-role="view" id="setAppoint" data-title="OM Hospital" data-layout="om_hospital">
+        set appointment page
+    </div>
+    
+    <!--socialNet-->
+    <div data-role="view" id="socialNet" data-title="OM Hospital" data-layout="om_hospital">
+       Social side page
+    </div>
+    
+    <!--healthTip-->
+    <div data-role="view" id="healthTip" data-title="OM Hospital" data-layout="om_hospital">
+        health tips page
+    </div>
+    
+    <!--website-->
+    <div data-role="view" id="website" data-title="OM Hospital" data-layout="om_hospital">
+        view our website page
+    </div>
+    
+    
+    
     
     <!--layout Design-->
     <div data-role="layout" data-id="om_hospital">
@@ -67,7 +93,7 @@
             <div data-role="navbar" class="nvbar">
                 <a data-align="left" data-rel="drawer" href="#my-drawer" data-role="button"  class="setting"><img src="project/style/image/drawer.png" class="img"/></a>
                 <span data-role="view-title"></span>
-               <a data-align="right" data-role="button" href="#second"  class="setting"><img src="project/style/image/setting.png" class="img"/></a>
+               <a data-align="right" data-role="button" href="#"  class="setting"><img src="project/style/image/setting.png" class="img"/></a>
             </div>
         </div>
     </div>
