@@ -15,10 +15,20 @@ body {
 }
 
 /*drawer*/
-.drawerDiv{ width:235px;}
-.drawerDiv ul{padding:0px 0px 0px 0px}
+.drawerDiv{ width:285px;}
+.drawerDiv ul{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px}
+.drawerDiv ul li{ height:50px;background-color:#555555 !important}
 .km-flat .km-group-title {background:#E2E2E2;border-color: rgba(0,0,0,0.1);}
+.drawrItmDv{ width:100%;height:auto;}
+.drawrItmDv .drawrLogo{ width:30%;float:left;}
+.drawrItmDv .drawrTxt{ width:70%;float:left;}
+.drawrItmDv .drawrLogo img{ width:30px;height:30px;margin-top:2px;}
+.drawrItmDv .drawrTxt span{ font-size: 17px;font-weight: bold;line-height: 35px;color:#FFFFFF}
+.km-flat .km-list>li { border:1px solid #ACACAC}
+
 
 /*dashboard*/
 #home .mainDv{width:100%;height:auto;margin:0px auto;}
 #home .mainDv .logoDv{width:90%;height:130px;margin:0px auto;border:1px solid red;margin-top:15px;}
+.logoDv .logo{ width:35%;height:100%;border:1px solid blue;float:left}
+.logoDv .logoText{ width:65%;height:100%;border:1px solid green;float:left}

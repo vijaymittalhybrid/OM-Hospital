@@ -16,32 +16,48 @@
 <body>
     
     <!--Drawer-->
-    <div data-role="drawer" id="my-drawer" class="drawerDiv" data-model="app.dashbordService.viewModel" data-init="app.dashbordService.viewModel.show">
-        <ul id="drawer_list">
+    <div data-role="drawer" id="my-drawer" class="drawerDiv" data-views="['home']" data-model="app.dashbordService.viewModel" data-show="app.dashbordService.viewModel.show">
+        <ul data-role="listview" id="drawer_list" data-bind="source:drawer_items" data-template="drawer-template">
         </ul>
     </div>
+    
+    <script type="text/x-kendo-template" id="drawer-template">
+        <li>
+            <div class="drawrItmDv">
+                <div class="drawrLogo"><img src="#:url#"/></div>
+                <div class="drawrTxt"><span>#:name#</span></div>
+            </div>
+        </li>
+    </script>
     
     
     <!--Main Dashbord-->
     <div data-role="view" id="home" data-title="OM Hospital" data-layout="om_hospital">
-        <div class="mainDv">
-            <!--Logo Div-->
-            <div class="logoDv">
-                <!--For image-->
-                <div class="logo">
-                    
-                </div>
-                <!--For text-->
-                <div class="logoText">
-                    
-                </div>
-            </div>
+        <div class="mainDv" id="logo" data-bind="source:logo_item" data-template="logo-template">
+           
         </div>
     </div>
     
+    <script type="text/x-kendo-template" id="logo-template">
+        
+        <!--Logo Div-->
+        <div class="logoDv" >
+            <!--For image-->
+            <div class="logo">
+                <img src="#:url#" style="width:50px;height:50px;"/>
+            </div>
+
+            <!--For text-->
+            <div class="logoText">
+                <span>#:name#</span>
+            </div>
+        </div>
+       
+    </script>
+    
     
     <!--Second-->
-    <div data-role="view" id="second" data-title="OM Hospital" data-layout="om_hospital">
+    <div data-role="view" id="clinicInfo" data-title="OM Hospital" data-layout="om_hospital">
         hgkgjhgjhgjh
     </div>
     

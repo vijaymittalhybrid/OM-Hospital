@@ -1,3 +1,9 @@
-[
-    {'name':'ASDFG','price':'25'}
+[ 
+    {"link":"clinicInfo","name": "Clinic Information","url":"project/style/image/home.png" }, 
+    {"link":"clinicNews","name": "Clinic News","url":"project/style/image/clnews.png" }, 
+    {"link":"setAppoint","name": "Set Appointment","url":"project/style/image/appont.png" }, 
+    {"link":"socialNet","name": "Social Network","url":"project/style/image/social.png" }, 
+    {"link":"healthTip","name": "Health Tips","url":"project/style/image/hlth.png" }, 
+    {"link":"website","name": "Visit Our Website","url":"project/style/image/site.png" },
+    {"link":"jj","name": "","url":"project/style/image/blk.png" }
 ]
