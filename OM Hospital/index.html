@@ -23,8 +23,8 @@
     </div>
     
     <script type="text/x-kendo-template" id="drawer-template">
-        <li data-bind="click:navigation">
-            <div class="drawrItmDv">
+        <li data-bind="click:navigation" id="#:sourceUrl#">
+            <div class="drawrItmDv"> 
                 <div class="drawrLogo"><img src="#:imgUrl#"/></div>
                 <div class="drawrTxt"><span>#:name#</span></div>
             </div>
@@ -34,13 +34,16 @@
     
     <!--Main Dashbord-->
     <div data-role="view" id="home" data-title="OM Hospital" data-layout="om_hospital" data-model="app.homeService.viewModel" data-show="app.homeService.viewModel.show">
-        <div class="mainDv" id="logo">
-            <ul data-role="listview" id="logo_list" data-bind="source:logo_item" data-template="logo-template">
-            </ul>
+        <div class="block">
+            <div class="mainDv" id="logo">
+                <ul data-role="listview" id="logo_list" data-bind="source:logo_item" data-template="logo-template">
+                </ul>
+            </div>
         </div>
         
+        
         <div data-role="content">
-            
+           
         </div>
     </div>
     

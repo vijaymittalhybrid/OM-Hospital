@@ -20,22 +20,16 @@
                 
                 navigation:function(e){
                     app.drawerService.viewModel.navigateToView(e);
-                }
+                },
+                
             });
             kendo.bind($("#my-drawer ul"), viewModel);
             
-            /*logo*/
-            /*logoSource = new kendo.data.DataSource({
-                transport:{
-                    read:{
-                        url:'project/data/logoData.json',
-                        dataType:'json'
-                    }
-                }
-            });
+            /******/
+           /* $('#my-drawer').click(function(){
+                $('#my-drawer ul #emerg').addClass('urgent')
+            });*/
             
-            var logoModel = kendo.observable({ logo_item:logoSource});
-            kendo.bind($("#logo"), logoModel);*/
         },
         
         oninit:function(){
@@ -47,7 +41,7 @@
             
             if(data['data']['sourceUrl'] === 'clinicInfo')
             {
-                apps.navigate('#clinicInfo');
+                apps.navigate('#home');
             }
             
             if(data['data']['sourceUrl'] === 'clinicNews')

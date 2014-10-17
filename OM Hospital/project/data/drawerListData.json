@@ -5,5 +5,7 @@
     {"sourceUrl":"socialNet","name": "Social Network","imgUrl":"project/style/image/social.png" }, 
     {"sourceUrl":"healthTip","name": "Health Tips","imgUrl":"project/style/image/hlth.png" }, 
     {"sourceUrl":"website","name": "Visit Our Website","imgUrl":"project/style/image/site.png" },
-    {"sourceUrl":"jj","name": "","imgUrl":"project/style/image/blk.png" }
+    {"sourceUrl":"blk1","name": "","imgUrl":"project/style/image/blk.png" },
+    {"sourceUrl":"emerg","name": "EMERGENCY","imgUrl":"project/style/image/emergency.png" },
+    {"sourceUrl":"blk2","name": "","imgUrl":"project/style/image/blk.png" }
 ]

@@ -15,16 +15,22 @@ body {
 }
 
 /*drawer*/
-.drawerDiv{ width:285px;}
-.drawerDiv ul{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px}
-.drawerDiv ul li{ height:50px;background-color:#555555 !important}
+.drawerDiv{ width:285px;display:block}
+.drawerDiv ul{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
+.drawerDiv ul li{ height:50px;background-color:#555555 !important;}
 .km-flat .km-group-title {background:#E2E2E2;border-color: rgba(0,0,0,0.1);}
 .drawrItmDv{ width:100%;height:auto;}
 .drawrItmDv .drawrLogo{ width:30%;float:left;}
 .drawrItmDv .drawrTxt{ width:70%;float:left;}
 .drawrItmDv .drawrLogo img{ width:30px;height:30px;margin-top:2px;}
-.drawrItmDv .drawrTxt span{ font-size: 17px;font-weight: bold;line-height: 35px;color:#FFFFFF}
-.km-flat .km-list>li { border:1px solid #ACACAC}
+.drawrItmDv .drawrTxt span{ font-size: 18px;font-weight: bold;line-height: 35px;color:#FFFFFF}
+/*.km-flat .km-list>li { border:1px solid #ACACAC}*/
+.drawerDiv ul .urgent{ height:70px;background-color:red;}
+#my-drawer ul #emerg{ height:135px;}
+#my-drawer ul #emerg span{line-height: 150px;margin-left: -42px;font-size: 31px;}
+#my-drawer ul #emerg img{width: 55px;height: 50px;margin-left: 95px;}
+#my-drawer ul #blk1{ height:45px;}
+#my-drawer ul #blk2{ height:33px;}
 
 
 /*dashboard*/
@@ -34,7 +40,8 @@ body {
 .logoDv .logoText{ width:65%;height:100%;border:1px solid green;float:left}*/
 
 /*home*/
-#home .mainDv{width:98%;height:auto;margin:0px auto;margin-top:5px;background-color:#FFFFFF;border:1px solid #ccc;}
+#home .block{ width:100%;display:block;}
+#home .block .mainDv{width:100%;height:auto;margin:0px auto;margin-top:0px;background-color:#FFFFFF;border:1px solid #ccc;}
 #logo_list .logoDv{width:90%;height:130px;margin:0px auto;margin-top:15px;}
 .logoDv .logo{ width:32%;height:100%;float:left}
 .logoDv .logo img{width: 65px;height: 65px;margin: 26px 0px 0px 12px;}
