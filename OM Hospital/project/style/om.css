@@ -26,7 +26,7 @@ body {
 .drawrItmDv .drawrTxt span{ font-size: 18px;font-weight: bold;line-height: 35px;color:#FFFFFF}
 /*.km-flat .km-list>li { border:1px solid #ACACAC}*/
 .drawerDiv ul .urgent{ height:70px;background-color:red;}
-#my-drawer ul #emerg{ height:135px;}
+#my-drawer ul #emerg{ height:135px;background-color:#707070 !important}
 #my-drawer ul #emerg span{line-height: 150px;margin-left: -42px;font-size: 31px;}
 #my-drawer ul #emerg img{width: 55px;height: 50px;margin-left: 95px;}
 #my-drawer ul #blk1{ height:45px;}
